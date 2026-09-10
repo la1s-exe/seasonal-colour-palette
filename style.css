@@ -1,0 +1,327 @@
+:root {
+  --autumn-taupe: #a89f91;
+  --autumn-cream: #e8d8bd;
+  --autumn-biscuit: #c9a77b;
+  --autumn-honey: #c9963e;
+  --autumn-olive: #777548;
+  --autumn-terracotta: #b86143;
+  --autumn-ochre: #c28b32;
+  --autumn-eucalyptus: #789083;
+  --autumn-moss: #68704a;
+  --autumn-salmon: #c98270;
+}
+
+
+/* BODY */
+
+body {
+  background-color: #EAE6DF;
+  font-family: "Times New Roman", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* MAIN */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  padding: 20px 20px 120px;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 18px;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* HOW IT WORKS */
+
+.how-it-works {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+.how-it-works h2 {
+  font-size: 30px;
+}
+
+.season-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.season-buttons button {
+  padding: 12px 24px;
+  border: 1px solid #D5D0C8;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #F1EFEB;
+  color: #333;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.season-buttons button:hover {
+  background-color: #E5E0D8;
+  border-color: #8F887E;
+  transform: translateY(-1px);
+}
+
+.season-buttons button.active {
+  background-color: #D8D0C5;
+  border-color: #8F887E;
+  transform: translateY(-1px);
+}
+
+
+/* PALETTE */
+
+.palette {
+  text-align: center;
+  padding: 35px 20px 50px;
+}
+
+.palette h2 {
+  font-size: 34px;
+  min-height: 40px;
+}
+
+.colour-wheel {
+  width: 350px;
+  height: 350px;
+  margin: 30px auto;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #D5D0C8;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  background: conic-gradient(
+    #F1EFEB 0deg 11.2deg,
+    #EAE8E3 11.2deg 12deg,
+    #F1EFEB 12deg 23.2deg,
+    #EAE8E3 23.2deg 24deg,
+    #F1EFEB 24deg 35.2deg,
+    #EAE8E3 35.2deg 36deg,
+    #F1EFEB 36deg 47.2deg,
+    #EAE8E3 47.2deg 48deg,
+    #F1EFEB 48deg 59.2deg,
+    #EAE8E3 59.2deg 60deg,
+    #F1EFEB 60deg 71.2deg,
+    #EAE8E3 71.2deg 72deg,
+    #F1EFEB 72deg 83.2deg,
+    #EAE8E3 83.2deg 84deg,
+    #F1EFEB 84deg 95.2deg,
+    #EAE8E3 95.2deg 96deg,
+    #F1EFEB 96deg 107.2deg,
+    #EAE8E3 107.2deg 108deg,
+    #F1EFEB 108deg 119.2deg,
+    #EAE8E3 119.2deg 120deg,
+    #F1EFEB 120deg 131.2deg,
+    #EAE8E3 131.2deg 132deg,
+    #F1EFEB 132deg 143.2deg,
+    #EAE8E3 143.2deg 144deg,
+    #F1EFEB 144deg 155.2deg,
+    #EAE8E3 155.2deg 156deg,
+    #F1EFEB 156deg 167.2deg,
+    #EAE8E3 167.2deg 168deg,
+    #F1EFEB 168deg 179.2deg,
+    #EAE8E3 179.2deg 180deg,
+    #F1EFEB 180deg 191.2deg,
+    #EAE8E3 191.2deg 192deg,
+    #F1EFEB 192deg 203.2deg,
+    #EAE8E3 203.2deg 204deg,
+    #F1EFEB 204deg 215.2deg,
+    #EAE8E3 215.2deg 216deg,
+    #F1EFEB 216deg 227.2deg,
+    #EAE8E3 227.2deg 228deg,
+    #F1EFEB 228deg 239.2deg,
+    #EAE8E3 239.2deg 240deg,
+    #F1EFEB 240deg 251.2deg,
+    #EAE8E3 251.2deg 252deg,
+    #F1EFEB 252deg 263.2deg,
+    #EAE8E3 263.2deg 264deg,
+    #F1EFEB 264deg 275.2deg,
+    #EAE8E3 275.2deg 276deg,
+    #F1EFEB 276deg 287.2deg,
+    #EAE8E3 287.2deg 288deg,
+    #F1EFEB 288deg 299.2deg,
+    #EAE8E3 299.2deg 300deg,
+    #F1EFEB 300deg 311.2deg,
+    #EAE8E3 311.2deg 312deg,
+    #F1EFEB 312deg 323.2deg,
+    #EAE8E3 323.2deg 324deg,
+    #F1EFEB 324deg 335.2deg,
+    #EAE8E3 335.2deg 336deg,
+    #F1EFEB 336deg 347.2deg,
+    #EAE8E3 347.2deg 348deg,
+    #F1EFEB 348deg 359.2deg,
+    #EAE8E3 359.2deg 360deg
+  );
+}
+
+.colour-wheel:hover {
+  transform: scale(1.01);
+}
+
+
+/* COLOUR NAME */
+
+#colourName {
+  font-size: 22px;
+  font-weight: 600;
+  min-height: 28px;
+  margin-top: 14px;
+}
+
+
+/* INFORMATION BUTTONS */
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 20px 25px;
+  flex-wrap: wrap;
+}
+
+.options button {
+  width: 180px;
+  padding: 13px 18px;
+  border: 1px solid #B8B1A7;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #F1EFEB;
+  color: #333;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.options button:hover {
+  background-color: #E5E0D8;
+  border-color: #8F887E;
+  transform: translateY(-1px);
+}
+
+.options button.active {
+  background-color: #D8D0C5;
+  border-color: #8F887E;
+}
+
+
+/* SEASON INFORMATION */
+
+.season-information {
+  display: none;
+  max-width: 750px;
+  margin: 20px auto 70px;
+  padding: 50px 55px;
+  text-align: center;
+  background-color: #F1EFEB;
+  border: 1px solid #D5D0C8;
+  border-radius: 12px;
+}
+
+.season-information h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.season-information p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.season-information h3 {
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .season-buttons {
+    flex-wrap: wrap;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colour-wheel {
+    width: 300px;
+    height: 300px;
+  }
+
+}
